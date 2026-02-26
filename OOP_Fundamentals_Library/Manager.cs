@@ -58,10 +58,10 @@ namespace OOP_Fundamentals_Library
         {
             if (emp == null)
                 throw new ArgumentNullException(nameof(emp));
-            if (string.IsNullOrEmpty(task))
+            if (string.IsNullOrWhiteSpace(task))
                 throw new ArgumentException("The task cannot be empty");
             if (!_team.Contains(emp))
-                throw new InvalidOperationException("This employee is not on your team.");
+                throw new ArgumentException("This employee is not on your team.");
             Console.WriteLine($"Assigning task '{task}' to {emp.Name}");
         }
 

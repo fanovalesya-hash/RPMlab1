@@ -21,7 +21,7 @@
             get { return _position; }
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (string.IsNullOrWhiteSpace(value))
                     throw new ArgumentNullException("The position must be filled");
                 _position = value;
             }
