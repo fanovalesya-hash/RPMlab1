@@ -1,6 +1,4 @@
-﻿
-using OOP_Fundamentals_Library;
-
+﻿using OOP_Fundamentals_Library;
 internal class Program
 {
     static void Main(string[] args)
